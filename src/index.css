@@ -3,3 +3,53 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+header {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+}
+
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 300px;
+  margin: 20px;
+  display: flex;
+  border: 1px solid grey;
+  padding: 15px;
+}
+
+.movie-left {
+
+}
+
+.movie-right {
+  margin-left: 20px;
+}
+
+.poster {
+  width: 100px;
+}
+
+.transition-enter {
+  transform: scale(0,0) rotate(1080deg);
+}
+
+.transition-enter.transition-enter-active {
+  transform: scale(1, 1) rotate(0deg);
+  transition: all 1500ms ease-in;
+}
+
+.transition-leave {
+  opacity: 1;
+}
+
+.transition-leave.transition-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
